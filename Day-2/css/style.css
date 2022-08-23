@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 90px;
+    padding: 20px;
+    background-color: #afc9dc;
+}
+.title{
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #396c8e;
+}
+.title p {
+    font-size: 18px;
+}
+
+.menu{
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+.menu a{
+    text-decoration: none;
+    color: #396c8e;
+}
+
+.section{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    height: calc(90vh - 90px);
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f4f6;
+    user-select: none;      
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Silkscreen', cursive;
+    font-size: 100px;
+    width: 100%;
+    text-align: center;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: helloWorld-animation 3s;
+    animation-timing-function: linear;   
+}
+
+.text:hover {
+    font-size: 80px;
+    box-shadow: 0px 0px 32px 9px rgba(0,0,0,0.64);
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.text:active{
+    letter-spacing: 40px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80px;
+    padding: 20px;
+    background-color: #afc9dc;
+}
+
+@keyframes helloWorld-animation{
+    0%{
+        font-size: 22px;
+        opacity: 0;
+    }
+    50%{
+        font-size: 200px;
+    }
+    100%{
+        font-size: 100px;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 651px){
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .title{
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: start;
+    }
+    
+    .menu{
+        margin-bottom: 5pxx;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    
+    
+}
+
+@media (min-width: 800px){
+    
+    .text{
+        white-space: nowrap;
+    }
+}
